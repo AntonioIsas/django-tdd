@@ -52,7 +52,7 @@ class NewVisitorTest(unittest.TestCase):
 
         # The page updates again, and now shows both items on her list
         self.check_for_row_in_list_table('1: Buy peacock feathers')
-        self.check_for_row_in_list_table('2: Use peacock feathers to'
+        self.check_for_row_in_list_table('2: Use peacock feathers to '
                                          'make a fly')
 
         # Edith wonders whether the site will remember her list. Then she sees
