@@ -3,13 +3,13 @@ Description=Gunicorn server for DOMAIN
 
 [Service]
 Restart=on-failure
-User=kaiser
+User=USER
 WorkingDirectory=/home/USER/DOMAIN
 EnvironmentFile=/home/USER/DOMAIN/.env
 
-ExecStart=/home/USER/DOMAIN/virtualenv/bin/gunicorn \
+ExecStart=/home/USER/DOMAIN/.venv/bin/gunicorn \
     --bind unix:/tmp/DOMAIN.socket \
-    superlists.wsgi:application
+    miescuelaonline.wsgi:application
 
 [Install]
 WantedBy=multi-user.target

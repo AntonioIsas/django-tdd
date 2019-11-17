@@ -4,15 +4,9 @@ Provisioning a new site
 ## Required packages:
 
 * nginx
-* Python 3.6
-* virtualenv + pip
+* Python 3.7
+* venv + pip
 * Git
-
-eg, on Ubuntu:
-
-    sudo add-apt-repository ppa:deadsnakes/ppa
-    sudo apt update
-    sudo apt install nginx git python36 python3.6-venv
 
 ## Nginx Virtual Host config
 
@@ -29,14 +23,13 @@ eg, on Ubuntu:
 Assume we have a user account at /home/username
 
 /home/username
-└── sites
-    ├── DOMAIN1
-    │    ├── .env
-    │    ├── db.sqlite3
-    │    ├── manage.py etc
-    │    ├── static
-    │    └── virtualenv
-    └── DOMAIN2
-         ├── .env
-         ├── db.sqlite3
-         ├── etc
+└── DOMAIN1
+│    ├── .env
+│    ├── db.sqlite3
+│    ├── manage.py etc
+│    ├── static
+│    └── virtualenv
+└── DOMAIN2
+        ├── .env
+        ├── db.sqlite3
+        ├── etc
