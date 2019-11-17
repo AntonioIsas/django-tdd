@@ -1,0 +1,14 @@
+{
+    "python.pythonPath": ".venv/bin/python",
+    "terminal.integrated.fontSize": 13,
+    "python.linting.pycodestyleArgs": [
+        "--max-line-length=120"
+    ],
+    "python.linting.pylintArgs": [
+        "--load-plugins=pylint_django"
+   ],
+   "editor.detectIndentation": false,
+   "[html]": {
+    "editor.tabSize": 2
+  }
+}
